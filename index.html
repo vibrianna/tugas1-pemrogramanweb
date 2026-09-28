@@ -3,183 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas 1 Pemrograman Web</title>
-    <style>
-        body{font-family: Arial, Helvetica, sans-serif;}
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        td {
-            padding: 0;
-        }
-
-        .header img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .menu {
-            background-color: #c49532;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .menu a {
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 25px;
-            font-size: 18px;
-        }
-
-        .menu a:hover {
-            color: #0062ff;
-        }
-
-        .sidebar {
-            background-color: #f9f4f4;
-            padding: 15px;
-            vertical-align: top;
-        }
-
-        .sidebar h3 {
-            text-align: center;
-            margin-top: 0;
-        }
-
-        .sidebar a {
-            display: block;
-            padding: 12px;
-            margin-bottom: 8px;
-            color: black;
-            text-decoration: none;
-            background-color: white;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-        }
-
-        .sidebar a:hover {
-            background-color: #dddddd;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .content {
-            padding: 0;
-            vertical-align: top;
-        }
-
-        .content-section {
-            padding: 20px;
-            border-bottom: 1px solid #000000;
-        }
-
-        .content-section h3 {
-            margin-top: 0;
-        }
-    </style>
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Carter+One&display=swap');</style>
 </head>
 
 <body>
-    <table border="1">
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-        <!-- header -->
-        <tr>
-            <td colspan="2" align="center" class="header">
-                <img src="gambar/Untitled design (7).png" alt="Genshin chara" width="100%">
-            </td>
-        </tr>
+    <div class="container-fluid" id="logo">
+    <a class="navbar-brand" href="/" style="font-family: 'Boldonse', cursive;">Editin!!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-        <!-- main menu -->
-        <tr>
-            <td colspan="2" align="center" class="menu">
-                <a href ="https://genshin.hoyoverse.com">Website</a> |
-                <a href ="https://www.youtube.com/@GenshinImpact">YouTube</a> |
-                <a href="https://www.instagram.com/genshinimpact/">Instagram</a>
-            </td>
-        </tr>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
 
-        <!-- side bar -->
-        <tr>
-            <td width="20%" class="sidebar" valign="top">
-                <ul>
-                    <li><b><a href="tugas2.html">TUGAS 2</a></b></li>
-                    <li><b><a href="tugas3.html">TUGAS 3</a></b></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Region">Region</a></li>
-                </ul>
-            </td>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#download">Download</a>
+        </li>
 
-        <!-- content -->
-            <td width="80%" class="content">
-                <div class="content-section">
-                <h2 id="About" align="center">About</h2>
-                <p align="center">Genshin Impact is an open-world action role-playing game developed by HoYoverse.
-                    The game takes place in a fantasy world called Teyvat, which is divided into seven nations,
-                    each associated with a different element and ruled by an Archon. Players take the role of the Traveler,
-                    a mysterious character who travels across Teyvat in search of their lost sibling. Along the journey,
-                    the Traveler meets many characters, explores different regions, completes quests, and uncovers the hidden history of Teyvat.
-                    The game combines exploration, combat, character collection, puzzles, and storytelling, with each nation having its own culture,
-                    environment, characters, and central conflict.</p></div>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#aplikasi">Apps</a>
+        </li>
 
-                <div class="content-section">
-                <h2 id="Region" align="center">Region</h2>
-                <table>
-                    <tr><td colspan="2"><b>1. Mondstadt</b></td></tr>
-                <tr><td><img src="gambar/mondstadt.jpeg" width="150"></td>
-                <td>Mondstadt is the Nation of Freedom, ruled by Venti, the Anemo Archon. It is a peaceful land inspired by European culture, known for its wind, music, and freedom.
-                The Traveler first arrives here and helps Venti save Dvalin, one of the Four Winds, who has been corrupted by the Abyss.
-                The story introduces the Traveler to the world of Teyvat and shows how Venti believes that people should be free to choose their own path.</td></tr>
-                    
-                    <tr><td colspan="2"><b>2. Liyue</b></td></tr>
-                <tr><td><img src="gambar/Discuss Everything About Genshin Impact Wiki ____.jpeg" width="150"></td>
-                <td>Liyue is the Nation of Contracts, ruled by Zhongli, the Geo Archon. It is a prosperous nation centered around trade, traditions, and commerce. 
-                During the Rite of Descension, Rex Lapis suddenly appears to die, causing chaos in Liyue. The Traveler investigates the incident and becomes involved with the Fatui and the ancient god Osial. 
-                In the end, Liyue's people prove that they are capable of protecting their nation without depending entirely on their Archon.</td></tr>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tugas</a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tugas1.html">Tugas 1</a></li>
+            <li><a class="dropdown-item" href="tugas2.html">Tugas 2</a></li>
+            <li><a class="dropdown-item" href="tugas3.html">Tugas 3</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Segitu Dulu</a></li>
+            </ul>
+        </li>
 
-                    <tr><td colspan="2"><b>3. Inazuma</b></td></tr>
-                <tr><td><img src="gambar/Inazuma.jpeg" width="150"></td>
-                <td>Inazuma is the Nation of Eternity, ruled by Raiden Ei, the Electro Archon. Because Ei fears loss and change, she creates the Vision Hunt Decree and isolates
-                Inazuma from the outside world. The Traveler joins the resistance against these policies and eventually confronts Ei. Through the conflict, Ei realizes that eternity cannot mean stopping
-                all change, and that people must be allowed to pursue their own ambitions.</td></tr>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.instagram.com/vbrnn__">Profile</a>
+        </li>
+      </ul>
+      
+      <div class="d-flex">
+        <a href="#" class="btn btn-outline-success me-2">Register</a>
+        <a href="#" class="btn btn-primary">Login</a>
+      </div>
+    </div>
+    </div>
+  </nav>
 
-                    <tr><td colspan="2"><b>4. Sumeru</b></td></tr>
-                <tr><td><img src="gambar/Иконка Сумеру.jpeg" width="150"></td>
-                <td>Sumeru is the Nation of Wisdom, ruled by Nahida, the Dendro Archon. It is home to the Akademiya, one of the greatest centers of knowledge in Teyvat. 
-                Despite being the Archon, Nahida is isolated and treated poorly by the Akademiya. The Traveler helps her fight against the Akademiya's plan to create a new god using Scaramouche. 
-                The story also reveals important truths about Greater Lord Rukkhadevata and the nature of knowledge and wisdom.</td></tr>
+    <!-- Home -->
+    <section>
+    <div class="container my-3 py-2" id="home">
+        <div class="row my-6">
+            <div class="col align-self-center">
+                <h1 style="font-family: 'Carter One', cursive;"> Welcome to Editin!!</h1>
+                <p>Let's learn how to do video editing from CapCut, Alight Motion, and Adobe After Effects</p>
+                <a href="#tutorial" class="btn btn-success">Tutorial</a>
+            </div>
+            <div class="col d-none d-md-block">
+                <img src="gambar/70509550411079826.jpe" class="img-fluid mx-auto" style="max-width: 600px;">
+            </div>
+        </div>
+    </div>
+    </section>
 
-                    <tr><td colspan="2"><b>5. Fontaine</b></td></tr>
-                <tr><td><img src="gambar/fontaine icon.jpeg" width="150"></td>
-                <td>Fontaine is the Nation of Justice, associated with Furina and Focalors, the Hydro Archon. It is famous for its advanced technology, legal system, and theatrical trials. 
-                The Traveler becomes involved in investigating a prophecy that predicts Fontaine's destruction and the disappearance of its people. As the story progresses, the truth behind Furina, Focalors, and 
-                the Hydro Archon is revealed, leading to a major sacrifice that ultimately saves Fontaine.</td></tr>
 
-                    <tr><td colspan="2"><b>6. Natlan</b></td></tr>
-                <tr><td><img src="gambar/natlan icon.jpeg" width="150"></td>
-                <td>Natlan is the Nation of War, ruled by Mavuika, the Pyro Archon. Its people are divided into several tribes, but they share a strong warrior culture and a long 
-                history of fighting the Abyss. The Traveler joins Mavuika and Natlan's warriors in defending their homeland from the Abyssal threat. The story emphasizes courage, unity, sacrifice, and the determination 
-                to protect one's people.</td></tr>
+    <!-- Apps -->
+    <section id="aplikasi">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Editing Apps</h2>
+                <p>Discover the editing apps that suitable for you to learn and develop your skills</p>
+            </div>
 
-                    <tr><td colspan="2"><b>7. Snezhnaya</b></td></tr>
-                <tr><td><img src="gambar/иконка снежной.jpeg" width="150"></td>
-                <td>Snezhnaya is the Nation of Love, ruled by the Tsaritsa, the Cryo Archon. It is the homeland of the Fatui, a powerful organization whose members have appeared throughout the Traveler's journey.
-                The Tsaritsa has ordered the Fatui to collect the Gnoses from the other Archons, but her ultimate goal remains mysterious. Snezhnaya is expected to reveal more about the Fatui, the Tsaritsa's plan, and the larger conflict
-                surrounding Teyvat.</td></tr>
-                </table></div>
+      <h3 class="mb-2">Discover the Apps</h3>
+      <div class="row g-4">
 
-        <!-- footer -->
-         <tr>
-            <td colspan="2" align="center">&copy;Vibrianna Daulay 2026</td>
-        </tr>
-    </table>
+         <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card h-100">
+                  <img src="gambar/Untitled design (8).png" class="card-img-top" style="width: 92%; align-self: center;">
+                <div class="card-body">
+                  <h5 class="card-title">CapCut</h5>
+                  <p class="card-text">CapCut is a video editing app suitable for beginners. The app offers various features such as video trimming, transitions, effects, text, music, and filters. It offers both free and paid features. Available on mobile and desktop.</p>
+                </div>
+            </div>    
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card h-100">
+                <img src="gambar/Alight Motion.jpe" class="card-img-top" style="width: 90%; align-self: center;">
+              <div class="card-body">
+                <h5 class="card-title">Alight Motion</h5>
+                <p class="card-text">Alight Motion is an editing application that can be used to create animations, motion graphics, visual effects, and videos. It is easy to use and offers a variety of creative tools. It offers both free and paid features. Only available on mobile.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card h-100">
+                <img src="gambar/Adobe After Effects Logo PNG Vector (AI) Free Download.jpe" class="card-img-top" style="width: 90%; align-self: center;">
+              <div class="card-body">
+                <h5 class="card-title">Adobe After Effects</h5>
+                <p class="card-text">Adobe After Effects is a professional software for creating animations, motion graphics, and visual effects. It offers advanced tools for detailed and high-quality editing. Only available on desktop and requires a paid subscription.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Download -->
+    <section id="download">
+        <div class="container">
+
+      <h3 class="mt-5 mb-2">Download in Your Own Platform</h3>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-header">Download CapCut</div>
+              <div class="card-body">
+                <p class="card-text">Download CapCut based on your device and let's start editing.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.lemon.lvoverseas&pcampaignid=web_share" class="btn btn-success">Android</a>
+                <a href="https://apps.apple.com/id/app/capcut-editor-foto-video/id1500855883?l=id" class="btn btn-success">IOS</a>
+                <a href="https://www.capcut.com/id-id/tools/desktop-video-editor" class="btn btn-success">Desktop</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-header">Download Alight Motion</div>
+              <div class="card-body">
+                <p class="card-text">Download Alight Motion based on your device and let's start editing.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.alightcreative.motion&pcampaignid=web_share" class="btn btn-success">Android</a>
+                <a href="https://apps.apple.com/us/app/alight-motion/id1459833443" class="btn btn-success">IOS</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-header">Download Adobe After Effects</div>
+              <div class="card-body">
+                <p class="card-text">Download Adobe After Effects based on your device and let's start editing.</p>
+                <a href="https://www.adobe.com/products/aftereffects/free-trial-download.html" class="btn btn-success">Desktop</a>
+              </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Tutorial -->
+    <section id="tutorial">
+        <div class="container">
+        
+      <h3 class="mt-5 mb-2">Watch These Tutorials</h3>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-header text-bg-dark">CapCut Tutorial on YouTube</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@Exal.Visuals">Channel 1</a></li>
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@vida_editz">Channel 2</a></li>
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@EditingVideoCepat">Channel 3</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-header text-bg-dark">Alight Motion Tutorial on YouTube</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@Womzyfilms">Channel 1</a></li>
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@Exal.Visuals">Channel 2</a></li>
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@batmansolosall">Channel 3</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-header text-bg-dark">Adobe After Effects Tutorial on YouTube</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@AfterEffectsBasics">Channel 1</a></li>
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@Tozel.">Channel 2</a></li>
+              <li class="list-group-item"><a class="text-dark fw-bold link-offset-2 link-underline link-underline-opacity-0" href="https://www.youtube.com/@MotionNations">Channel 3</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        </div>
+      </div>
+     </section>
+
+     <footer class="bg-dark text-light py-3 mt-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="text-center">
+              
+            <h3>Thank You for Visiting</h3>
+            <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://wa.me/6285297016101">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </footer>
+
+     <!-- Script -->
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
